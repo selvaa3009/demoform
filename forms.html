@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="stylesheet" href="font-awesome/css/all.min.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/5df6754b11.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="container header-container">
+            <div></div>
+            <div class="page-title">
+                <h1>Form</h1>
+            </div>
+            <a href="/" class="logo">Logo</a>
+        </div>
+    </header>
+    <div class="menu">
+        <a href="javascript:void(0)" class="menu-icon"><i class="fas fa-bars"></i><span
+                class="menu-text">Menu</span></a>
+        <div class="menu-items">
+            <ul class="accordion">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li class="list-items"><a href="javascript:void(0);" class="right">Panel 1</a>
+                    <ul class="accordion-items">
+                        <li><a href="/queries.html">Queries</a></li>
+                        <li><a href="/forms.html">Forms</a></li>
+                    </ul>
+                </li>
+                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="/help.html">Help</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main-container">
+            <h2>This is Form page</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis dicta neque quod voluptate ipsum
+                reprehenderit alias sint. Praesentium, quas, sint magni eligendi repellendus aliquam dolores sunt
+                pariatur, debitis dolor reiciendis!</p>
+
+            <form method="post" action="">
+                <fieldset>
+                    <div>
+                        <label for="fname">First Name</label><br/>
+                        <input type="text" name="fname" id="fname">
+                    </div>
+                    <div>
+                        <label for="lname">Last Name</label><br />
+                        <input type="text" name="lname" id="lname">
+                    </div>
+                    <div>
+                        <label for="gender">Gender</label><br />
+                        <input type="radio" name="gender" value="male" id="male"> <label for="male">Male</label><br>
+                        <input type="radio" name="gender" value="female" id="female"> <label for="female">Female</label>
+                    </div>
+                    <div>
+                        <label for="email">Email</label><br />
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <label for="registeroffice">Registered Office</label><br />
+                        <input type="text" name="registeroffice" id="registeroffice">
+                    </div>
+                    <div>
+                        <label for="business">Priniciple place of business</label><br />
+                        <input type="text" name="business" id="business">
+                    </div>
+                    <div>
+                        <label for="pnumber">Employee Number</label><br />
+                        <input type="text" name="pnumber" id="pnumber"><br>
+                        <span class="sub-label">Enter your unique 11digit number</span>
+                    </div>
+                    <div>
+                        <label for="skills">Skills</label><br />
+                        <input type="checkbox" name="html" value="html" id="html"> <label for="html">Html</label><br>
+                        <input type="checkbox" name="css" value="css" id="css"> <label for="css">Css</label><br>
+                        <input type="checkbox" name="javascript" value="javascript" id="javascript"> <label for="javascript">Javascript</label><br>
+                        <input type="checkbox" name="angular" value="angular" id="angular"> <label for="angular">Angular</label><br>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div>
+                        <label for="address">Address</label><br />
+                        <input type="text" name="stAddress" id="stAddress">
+                        <br>
+                        <span class="sub-label">Street Address</span><br>
+                        <br>
+                        <input type="text" name="stAddress2" id="stAddress2"><br>
+                        <span class="sub-label">Street Address Line 2</span><br><br>
+                        <div class="cityState">
+                            <div class="city">
+                                <input type="text" name="city"><br>
+                                <span class="sub-label">City</span>
+                            </div>
+                            <div class="state">
+                                <input type="text" name="state"><br>
+                                <span class="sub-label">State</span>
+                            </div>
+                        </div>
+                        <input type="number" name="zip" ><br>
+                        <span class="sub-label">Zip Code</span>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <label for="skills">Skills</label><br>
+                    <select>
+                        <option value="html">HTML</option>
+                        <option value="css">Css</option>
+                        <option value="javascript">Javascript</option>
+                        <option value="angular">Angular</option>
+                    </select>
+                    <br>
+                    <div>
+                        <label for="number">Type only number</label>
+                        <input type="number" name="number" id="number   ">
+                    </div>
+                    <div>
+                        <label for="range">Slide to adjust</label>
+                        <input type="range" id="range" min="0" max="10" value="" step="1">
+                        <span class="range-value" id="rangeV"></span>
+                    </div>
+                    <div>
+                        <label for="file">Choose a file</label>
+                        
+                        <input type="file" id="file" name="file">
+                    </div>
+                </fieldset>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/code.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,221 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* font-family: 'Oswald', sans-serif;
+font-family: 'Bangers', cursive;
+font-family: 'Roboto', sans-serif; */
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bangers', cursive;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    border-bottom: 1px solid #333;
+    padding: 30px 30px;
+    margin-left: 220px;
+    margin-right: 10px;
+}
+
+.page-title h1 {
+    margin: 0;
+}
+
+.logo {
+    color: red;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Bangers', cursive;
+}
+
+.menu {
+    position: fixed;
+    top: 10px;
+    left: 5px;
+    padding:  15px 20px;
+    font-size: 25px;
+    font-family: 'Bangers', cursive;
+    background: #333;
+    color: #fff;
+}
+
+.menu-icon {
+    font-size: 35px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.menu-text {
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+.menu-items {
+    /* display: none; */
+    height: 89vh;
+    width: 170px;
+    background: #333;
+    padding: 25px 0 0 30px;
+    box-sizing: border-box;
+}
+
+.menu-items ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu-items li {
+    padding: 6px 0;
+}
+
+.menu-items a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Bangers', cursive;
+    display: block;
+}
+
+.menu-items li > ul {
+    padding-left: 15px;
+}
+
+.menu-items li > ul a {
+    font-size: 18px;
+}
+
+.accordion a.right,
+.accordion a.down {
+    position: relative;
+    display: block;
+}
+
+.accordion a.right:after,
+.accordion a.down:after {
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    content: '\f054';
+    font-family: FontAwesome;
+    font-size: 10px;
+}
+
+.accordion a.down:after {
+    content: '\f078';
+}
+
+.main {
+    padding: 50px 20px 40px 0;
+    margin-left: 260px;
+}
+
+form {
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+form label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    vertical-align: top;
+}
+
+span.sub-label {
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cityState {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.city, .state {
+    width: 48%;
+}
+
+select {
+    margin-bottom: 25px;
+}
+
+button[type="submit"] {
+    border: none;
+    width: 150px;
+    height: 35px;
+    background: none;
+    border: 2px solid #333;
+    color: #333;
+    margin: 20px auto;
+    display: table;
+    cursor: pointer;
+}
+
+
+button[type="submit"]:hover {
+    border: 2px solid #333;
+    color: #000;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.about section,
+.contact section,
+.help section {
+    flex-direction: row-reverse;
+}
+
+.image {
+    width: 45%;
+    height: auto;
+}
+
+.content {
+    width: 50%;
+}
